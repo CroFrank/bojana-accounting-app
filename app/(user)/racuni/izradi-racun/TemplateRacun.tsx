@@ -3,8 +3,8 @@
 import { useToast } from "@/hooks/use-toast"
 import { createClient } from "@/utils/supabase/client"
 import { useEffect, useState } from "react"
-import { emptyCompanyInfo } from "../../dashboard/page"
 import { CompanyInfo, Racun } from "@/types"
+import { emptyCompanyInfo } from "@/lib/emptyForms"
 
 type Props = {
   form: Racun

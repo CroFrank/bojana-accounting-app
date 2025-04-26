@@ -15,16 +15,7 @@ import { InfoIcon, Loader2 } from "lucide-react"
 import { useEffect, useState } from "react"
 import { useToast } from "../../../hooks/use-toast"
 import { CompanyInfo } from "@/types"
-
-export const emptyCompanyInfo: CompanyInfo = {
-  naziv: "",
-  adresa: "",
-  grad: "",
-  zip: "",
-  oib: "",
-  iban: "",
-  banka: "",
-}
+import { emptyCompanyInfo } from "@/lib/emptyForms"
 
 const inputFields: {
   name: keyof CompanyInfo
