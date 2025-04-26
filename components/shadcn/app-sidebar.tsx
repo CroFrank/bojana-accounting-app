@@ -122,6 +122,11 @@ const data = {
       url: "/racuni",
       icon: FileText,
     },
+    {
+      name: "Računi",
+      url: "/racuni",
+      icon: FileText,
+    },
   ],
 }
 
@@ -131,14 +136,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton
-              asChild
-              className="data-[slot=sidebar-menu-button]:!p-1.5"
-            >
-              <a href="#">
-                <span className="text-base font-semibold">Bojana App</span>
-              </a>
-            </SidebarMenuButton>
+            <span className="text-base font-semibold p-2">Bojana App</span>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>

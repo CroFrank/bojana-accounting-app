@@ -4,6 +4,7 @@ import { Geist } from "next/font/google"
 import { ThemeProvider } from "next-themes"
 import "./globals.css"
 import Link from "next/link"
+import { Toaster } from "@/components/ui/toaster"
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -11,7 +12,7 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
+  title: "Bojana App | WebLifeSupport",
   description: "The fastest way to build apps with Next.js and Supabase",
 }
 
@@ -42,14 +43,14 @@ export default function RootLayout({
                     <Link href="/" className="hidden md:block">
                       WebLifeSupport
                     </Link>
-                    <Link href="/" className="md:hidden">
+                    <Link href="/" className="hidden sm:block md:hidden">
                       WLS
                     </Link>
                   </div>
                   <HeaderAuth />
                 </div>
               </nav>
-
+              <Toaster />
               {children}
 
               <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-8 py-16">

@@ -16,10 +16,10 @@ export default function ProizvodiIUslugePage() {
         <h1 className="text-2xl font-medium text-center pb-10">
           Unesite novi proizvod/uslugu
         </h1>
-        <AddProizvod onAdd={handleRefresh} />{" "}
+        <AddProizvod onAdd={handleRefresh} />
       </section>
 
-      <section className="mt-20">
+      <section className="my-20">
         <h1 className="text-2xl font-medium text-center pb-10">
           Popis proizvoda/usluga
         </h1>

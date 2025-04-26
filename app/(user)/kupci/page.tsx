@@ -19,7 +19,7 @@ export default function KupciPage() {
         <AddKupac onAdd={handleRefresh} />
       </section>
 
-      <section className="mt-20">
+      <section className="my-20">
         <h1 className="text-2xl font-medium text-center pb-10">Popis kupaca</h1>
         <KupciTable refresh={refresh} />
       </section>
